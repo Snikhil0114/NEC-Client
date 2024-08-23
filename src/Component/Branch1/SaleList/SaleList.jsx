@@ -22,7 +22,7 @@ const SaleList = () => {
 
   const fetchSales = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/shala/sales');
+      const response = await axios.get('https://nec-server-ten.vercel.app/shala/sales');
       console.log(response.data); // Debug: check the fetched data
       setSales(response.data);
     } catch (error) {
@@ -32,7 +32,7 @@ const SaleList = () => {
 
   const fetchSaleById = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:3000/shala/sales/${id}`);
+      const response = await axios.get(`https://nec-server-ten.vercel.app/shala/sales/${id}`);
       console.log(response.data); // Debug: check the fetched data for specific ID
       setSales([response.data]); // Assuming you only fetch one sale, wrap it in an array
     } catch (error) {

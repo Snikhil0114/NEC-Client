@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post('http://localhost:3000/branch/login', { email, password });
+        const response = await axios.post('https://nec-server-ten.vercel.app/branch/login', { email, password });
         const { branch } = response.data;
   
         if (branch) {

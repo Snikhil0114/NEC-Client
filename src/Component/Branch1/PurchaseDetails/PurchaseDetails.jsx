@@ -13,7 +13,7 @@ const PurchaseDetails = () => {
     const fetchPurchaseDetails = async () => {
       try {
         // Fetch purchase details based on purchase_id
-        const response = await axios.get(`http://localhost:3000/wala/shala/purchase-details/${id}`);
+        const response = await axios.get(`https://nec-server-ten.vercel.app/wala/shala/purchase-details/${id}`);
         console.log('API Response:', response.data); // Log response for debugging
         
         const purchaseData = response.data;

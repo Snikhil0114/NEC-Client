@@ -10,7 +10,7 @@ const SupplierList = () => {
     const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
-        axios.get('http://localhost:3000/branch1/mala/suppliers')
+        axios.get('https://nec-server-ten.vercel.app/branch1/mala/suppliers')
             .then(result => {
                 if (result.data) {
                     setSuppliers(result.data);

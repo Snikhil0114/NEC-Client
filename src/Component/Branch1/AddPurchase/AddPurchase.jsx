@@ -25,7 +25,7 @@ const AddPurchase = () => {
   const [totalAfterDiscount, setTotalAfterDiscount] = useState(0);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/follow/suppliers')
+    axios.get('https://nec-server-ten.vercel.app/follow/suppliers')
       .then(response => {
         setSuppliers(response.data);
       })
@@ -33,7 +33,7 @@ const AddPurchase = () => {
         console.error('Error fetching suppliers:', error);
       });
 
-    axios.get('http://localhost:3000/follow/products')
+    axios.get('https://nec-server-ten.vercel.app/follow/products')
       .then(response => {
         setProducts(response.data);
       })
@@ -50,7 +50,7 @@ const AddPurchase = () => {
     const id = event.target.value;
     setSupplierId(id);
     try {
-      const response = await axios.get(`http://localhost:3000/follow/suppliers/${id}`);
+      const response = await axios.get(`https://nec-server-ten.vercel.app/follow/suppliers/${id}`);
       const { phone_number } = response.data;
       setSupplierPhone(phone_number);
     } catch (error) {
@@ -64,7 +64,7 @@ const AddPurchase = () => {
     const newPurchaseItems = [...purchaseItems];
     newPurchaseItems[index].productId = id;
     try {
-      const response = await axios.get(`http://localhost:3000/follow/products/${id}`);
+      const response = await axios.get(`https://nec-server-ten.vercel.app/follow/products/${id}`);
       const { price, stock } = response.data;
       if (stock === 0) {
         alert('Stock is not available. Select another product.');
@@ -135,7 +135,7 @@ const AddPurchase = () => {
       quantity: item.quantity,
     }));
 
-    axios.post('http://localhost:3000/follow/purchases', {
+    axios.post('https://nec-server-ten.vercel.app/follow/purchases', {
       supplier_id: supplierId,
       supplier_phone: supplierPhone,
       purchase_data: purchaseData,

@@ -13,7 +13,7 @@ const RevenueChart = () => {
   useEffect(() => {
     const fetchRevenueData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/revenue');
+        const response = await axios.get('https://nec-server-ten.vercel.app/api/revenue');
         setRevenueData(response.data);
       } catch (error) {
         console.error('Error fetching revenue data:', error);

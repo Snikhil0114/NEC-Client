@@ -12,7 +12,7 @@ const ProductList = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/products')
+        axios.get('https://nec-server-ten.vercel.app/api/products')
             .then(result => {
                 if (result.data.Status) {
                     setProducts(result.data.Result);

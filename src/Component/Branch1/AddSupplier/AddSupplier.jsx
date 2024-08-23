@@ -15,7 +15,7 @@ const AddSupplier = () => {
         event.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3000/branch1/mala/addSupplier', {
+            const response = await axios.post('https://nec-server-ten.vercel.app/branch1/mala/addSupplier', {
                 name,
                 address,
                 phone_number: phoneNumber,

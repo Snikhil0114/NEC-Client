@@ -16,7 +16,7 @@ const SaleDetails = () => {
   useEffect(() => {
     const fetchSaleDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/wala/shala/sale-details/${id}`);
+        const response = await axios.get(`https://nec-server-ten.vercel.app/wala/shala/sale-details/${id}`);
         console.log('API Response:', response.data);
         
         const saleData = response.data;
@@ -29,7 +29,7 @@ const SaleDetails = () => {
 
         setSale(saleData);
 
-        const customerResponse = await axios.get(`http://localhost:3000/shala/customers/${saleData.customer_id}`);
+        const customerResponse = await axios.get(`https://nec-server-ten.vercel.app/shala/customers/${saleData.customer_id}`);
         setCustomerDetails({
           name: customerResponse.data.name,
           phone: customerResponse.data.phone,

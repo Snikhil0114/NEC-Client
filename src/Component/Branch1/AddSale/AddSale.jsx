@@ -28,7 +28,7 @@
 //   const [canPrint, setCanPrint] = useState(false); // New state variable for print button
 
 //   useEffect(() => {
-//     axios.get('http://localhost:3000/shala/customers')
+//     axios.get('https://nec-server-ten.vercel.app/shala/customers')
 //       .then(response => {
 //         setCustomers(response.data);
 //       })
@@ -36,7 +36,7 @@
 //         console.error('Error fetching customers:', error);
 //       });
 
-//     axios.get('http://localhost:3000/shala/products')
+//     axios.get('https://nec-server-ten.vercel.app/shala/products')
 //       .then(response => {
 //         setProducts(response.data);
 //       })
@@ -53,7 +53,7 @@
 //     const id = event.target.value;
 //     setCustomerId(id);
 //     try {
-//       const response = await axios.get(`http://localhost:3000/shala/customers/${id}`);
+//       const response = await axios.get(`https://nec-server-ten.vercel.app/shala/customers/${id}`);
 //       const { phone } = response.data;
 //       setCustomerPhone(phone);
 //     } catch (error) {
@@ -67,7 +67,7 @@
 //     const newSaleItems = [...saleItems];
 //     newSaleItems[index].productId = id;
 //     try {
-//       const response = await axios.get(`http://localhost:3000/shala/products/${id}`);
+//       const response = await axios.get(`https://nec-server-ten.vercel.app/shala/products/${id}`);
 //       const { price, stock } = response.data;
 //       if (stock === 0) {
 //         alert('Stock is not available. Select another product.');
@@ -135,7 +135,7 @@
 //       quantity: item.quantity,
 //     }));
 
-//     axios.post('http://localhost:3000/shala/sales', {
+//     axios.post('https://nec-server-ten.vercel.app/shala/sales', {
 //       customer_id: customerId,
 //       customer_phone: customerPhone,
 //       sale_data: saleData,

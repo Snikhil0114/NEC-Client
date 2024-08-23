@@ -72,7 +72,7 @@ const AddCustomer = () => {
       right_eye_addition: rightEyeAddition,
     };
     axios
-      .post("http://localhost:3000/branch1/customers", newCustomer)
+      .post("https://nec-server-ten.vercel.app/branch1/customers", newCustomer)
       .then((result) => {
         if (result.data.Status) {
           navigate("/Component/Branch1/CustomerList/CustomerList");

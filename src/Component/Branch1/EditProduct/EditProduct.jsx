@@ -18,7 +18,7 @@ const EditProduct = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/products/${id}`);
+                const response = await axios.get(`https://nec-server-ten.vercel.app/api/products/${id}`);
                 if (response.data.Status) {
                     const product = response.data.Result;
                     setName(product.name);
@@ -56,7 +56,7 @@ const EditProduct = () => {
         }
 
         try {
-            const response = await axios.put(`http://localhost:3000/api/products/${id}`, formData, {
+            const response = await axios.put(`https://nec-server-ten.vercel.app/api/products/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

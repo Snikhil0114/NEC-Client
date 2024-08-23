@@ -25,7 +25,7 @@ const AddProduct = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/products",
+        "https://nec-server-ten.vercel.app/api/products",
         formData,
         {
           headers: {

@@ -14,7 +14,7 @@ const TransactionList = () => {
   useEffect(() => {
     const fetchSales = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/hamara/transaction');
+        const response = await axios.get('https://nec-server-ten.vercel.app/hamara/transaction');
         setSales(response.data);
         setFilteredSales(response.data);
       } catch (error) {xa

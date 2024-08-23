@@ -11,7 +11,7 @@ const IncomePieChart = ({ title }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/income-data')
+    axios.get('https://nec-server-ten.vercel.app/api/income-data')
       .then(response => {
         setData(response.data);
         setLoading(false);

@@ -15,7 +15,7 @@ const SalesSummary = () => {
     // Fetch summary data from the server
     const fetchSummary = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/summary');
+        const response = await axios.get('https://nec-server-ten.vercel.app/api/summary');
         setSummaryData(response.data);
       } catch (error) {
         console.error('Error fetching sales summary:', error); // Log the error

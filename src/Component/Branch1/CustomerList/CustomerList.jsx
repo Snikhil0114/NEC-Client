@@ -13,7 +13,7 @@ const CustomerList = () => {
     const [expandedEye, setExpandedEye] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/branch1/customers')
+        axios.get('https://nec-server-ten.vercel.app/branch1/customers')
             .then(result => {
                 if (result.data.Status) {
                     setCustomers(result.data.Result);
@@ -26,7 +26,7 @@ const CustomerList = () => {
 
     const handleDelete = (customer_id) => {
         if (window.confirm('Are you sure you want to delete this customer?')) {
-            axios.delete(`http://localhost:3000/branch1/customers/${customer_id}`)
+            axios.delete(`https://nec-server-ten.vercel.app/branch1/customers/${customer_id}`)
                 .then(result => {
                     if (result.data.Status) {
                         setCustomers(prevCustomers => prevCustomers.filter(customer => customer.customer_id !== customer_id));

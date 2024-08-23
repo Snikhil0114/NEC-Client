@@ -1,0 +1,149 @@
+/* SaleList.css */
+
+.sale-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -15px;
+    width: 1160px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #c2cbe5b4;
+}
+  
+.add-sale-link {
+    text-decoration: none;
+    color: white;
+    background-color: #008CBA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 1050px;
+    font-size: 15px;
+    width: 70px;
+}
+.add-sale-link:hover {
+    background-color: #035c80;
+    color: #ccc;
+}
+  
+.sale-heading {
+    font-size: 25px;
+    color: black;
+    /* margin-right: 100px; */
+    margin-left: 10px;
+}
+  
+.search-container {
+    margin-right: 100px;
+    font-size: 15px;
+}
+  
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+  
+.sale-table {
+    width: 1160px;
+    border-collapse: separate; /* Changed to separate for shadow effect */
+    border-spacing: 0 10px; /* Add space between rows for shadow effect */
+    margin-top: -20px;
+}
+  
+.sale-table-head {
+    background-color: #f2f2f2;
+}
+.bl {
+    background-color: #008CBA;
+    color: #f3f3f7;
+    font-size: 14px;
+}
+  
+.sale-table-th, .sale-table-td {
+    padding: 10px;
+    text-align: left;
+    height: 37px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    background-color: white; /* Ensure cells have a background color */
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word; /* Wrap long words onto the next line */
+    overflow-wrap: break-word; /* Ensure text wraps within the cell */
+    word-break: break-word; /* Break words if needed to fit */
+}
+  
+.sale-table-th {
+    background-color: #f2f2f2;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    /* height: 10px; */
+    line-height:1 ;
+}
+  
+.sale-table-tr:nth-child(even) .sale-table-td {
+    background-color: #f9f9f9;
+}
+  
+.sale-table-tr:hover .sale-table-td {
+    background-color: #ddd;
+}
+  
+.bl:hover {
+    background-color: #006f9a;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.pagination {
+    display: flex;
+}
+  
+.pagination-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+  
+.pagination-item {
+    margin: 0 5px;
+}
+  
+.pagination-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+}
+  
+.pagination-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.pagination-button:hover:not(.active) {
+    background-color: #ddd;
+}
+  
+.pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+  
+/* Set equal width for all columns except the product names column */
+.sale-table-th, .sale-table-td {
+    width: calc(100% / 10); /* Assuming there are 10 columns */
+}

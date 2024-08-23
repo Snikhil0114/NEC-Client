@@ -1,0 +1,154 @@
+/* SupplierList.css */
+
+#supplierbody {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: -28px; 
+}
+
+.supplier-container {
+    width: 100%;
+    max-width: 1700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    background-color: #c2cbe5b4;
+}
+
+.add-supplier-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.add-supplier-link:hover {
+    background-color: #063faa;
+}
+
+.heading-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* This allows the items to wrap if there's not enough space */
+    font-size: 12px;
+}
+
+#Supplier-heading {
+    font-size: 25px;
+    margin: 0;
+    white-space: nowrap; /* Prevents the heading from breaking into multiple lines */
+}
+
+.search-container {
+    text-align: right;
+    margin-left: 800px;
+    margin-top: -50px;
+    font-size: 12px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#supplier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#supplier-table th, #supplier-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    height: 39px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word; /* Wrap long words onto the next line */
+    overflow-wrap: break-word; /* Ensure text wraps within the cell */
+    word-break: break-word; /* Break words if needed to fit */
+    margin-top: -30px;
+}
+
+#supplier-table th {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#supplier-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#supplier-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#supplierbody .delete-button {
+    background-color: #008CBA;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #024e67;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

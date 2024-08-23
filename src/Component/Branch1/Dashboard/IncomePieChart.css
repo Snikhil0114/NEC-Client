@@ -1,0 +1,31 @@
+/* src/components/IncomePieChart.css */
+
+.pie-chart-container {
+
+  width: 520px; /* Reduced width */
+  height: 330px; /* Reduced height */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: top;
+  margin: 10px;
+  margin-top: 260px; 
+  margin-left: 610px; /* Adjusted margin for positioning */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.pie-chart-legend {
+  margin-top: 20px; /* Adjusted margin */
+  display: flex;
+  color: black;
+  justify-content: space-around;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 10px; /* Reduced size */
+  height: 10px; /* Reduced size */
+  margin-right: 0px;
+  border-radius: 50%;
+}

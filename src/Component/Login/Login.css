@@ -1,0 +1,173 @@
+#login-body,
+#login-html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #d4ecfd;
+    height: 115vh;
+    width: 100vw;
+    overflow: hidden;
+    top: 0;
+}
+
+#logo-text {
+    font-size: 24px; /* Reduced font size */
+    font-weight: bold;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* margin-bottom: 200px; */
+}
+
+#login-card {
+    display: flex;
+    width: 1200px; /* Reduced width */
+    height: 550px; /* Reduced height */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f7faff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+}
+
+#login-form {
+    padding-right: 109px; /* Reduced padding */
+    padding-left: 80px; /* Reduced padding */
+    padding-bottom: 55px; /* Reduced padding */
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #F1FCFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#login-image {
+    width: 55%; /* Adjusted width to fit the reduced container size */
+    height: 100%;
+    background-image: url("../../assets/Eye.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+
+#loginlogo {
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 50px; /* Reduced margin */
+    position: absolute;
+    top: 30px; /* Adjusted positioning */
+    left: 30px;
+}
+
+#logo-image {
+    height: 24px; /* Reduced logo size */
+    margin-right: 10px;
+}
+
+#login-form h2 {
+    margin-top: 100px; /* Adjusted margin */
+    font-size: 28px; /* Reduced font size */
+    color: #333333;
+}
+
+.subtitle {
+    color: #666666;
+    font-size: 16px; /* Reduced font size */
+    margin-top: -15px; /* Adjusted margin */
+}
+
+#email-group,
+#password-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#email-group label,
+#password-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 18px; /* Reduced font size */
+}
+
+#email-group input,
+#password-group input {
+    width: 350px; /* Reduced input width */
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #c6c4c4;
+    border-radius: 10px;
+    font-size: 16px; /* Reduced font size */
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #F1FCFF;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 30px; /* Adjusted position */
+    cursor: pointer;
+}
+
+#remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px; /* Reduced font size */
+    margin-right: 30px; /* Adjusted margin */
+}
+
+#remember-me {
+    background-color: #F1FCFF;
+}
+
+#remember-forgot a {
+    color: #f44336;
+}
+
+#login-button {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    background-color: #00619B;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#login-button:hover {
+    background-color: #0056b3;
+}
+
+#divider {
+    text-align: center;
+    position: relative;
+    color: #b1adad;
+    font-size: 14px; /* Reduced font size */
+    margin-right: 30px; /* Adjusted margin */
+    margin-bottom: 20px;
+}
+
+#divider::before {
+    left: 0;
+}
+
+#divider::after {
+    right: 0;
+}

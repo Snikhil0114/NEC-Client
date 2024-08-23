@@ -1,0 +1,208 @@
+/* Container for the customer list */
+.customer-container {
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -10px; /* Reduced margin for better fit */
+    background-color: #c2cbe5b4; /* Adjusted background color */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+/* Link to add a customer */
+.add-customer-link {
+    display: inline-block;
+    padding: 8px 12px; /* Adjusted padding */
+    background-color: #007bff; /* Updated color for better visibility */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px; /* Slightly smaller border radius */
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 15px; /* Adjusted font size */
+    width: auto;
+    margin-left: -1030px; /* Adjusted width */
+}
+
+.add-customer-link:hover {
+    background-color: #0056b3;
+}
+
+/* Heading styles */
+#hd {
+    font-size: 20px; /* Reduced font size */
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: -920px;
+    margin-right: 100px; /* Adjusted margin */
+}
+
+/* Search Bar styles */
+.search-container {
+    margin-bottom: 15px; /* Reduced margin */
+    display: flex;
+    
+    justify-content: flex-end; /* Align to the right */
+    width: 30%; /* Full width */
+}
+
+.search-input {
+    padding: 8px 12px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slightly smaller border radius */
+    width: 200px; /* Adjusted width */
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    
+}
+.eye-details-table{
+    width: 100%; /* Adjusted width for responsiveness */
+    max-width: 1200px; /* Set max-width for better control */
+    border-collapse: collapse; /* Adjusted collapse */
+    border-spacing: 0 10px; /* Added spacing between rows */
+    table-layout: fixed; 
+
+}
+.eye-details-table th,
+.eye-details-table td {
+    padding: 6px; /* Reduced padding */
+    text-align: center;
+    height: 50px;
+    font-size: 8px; /* Reduced font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word; /* Wraps long words onto the next line */
+    overflow-wrap: break-word; /* Same as word-wrap, included for broader support */
+    word-break: break-word; /* Breaks long words if necessary */
+}
+
+/* Table styles */
+#customer-table {
+    width: 100%; /* Adjusted width for responsiveness */
+    max-width: 1200px; /* Set max-width for better control */
+    border-collapse: collapse; /* Adjusted collapse */
+    border-spacing: 0 10px; /* Added spacing between rows */
+    table-layout: fixed; /* Ensures columns have a fixed width */
+}
+
+/* Table header and cell styles */
+#customer-table th,
+#customer-table td {
+    padding: 6px; /* Reduced padding */
+    text-align: center;
+    height: 50px;
+    font-size: 14px; /* Reduced font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word; /* Wraps long words onto the next line */
+    overflow-wrap: break-word; /* Same as word-wrap, included for broader support */
+    word-break: break-word; /* Breaks long words if necessary */
+}
+
+#customer-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 15px; /* Adjusted font size */
+}
+
+/* Add shadow to each row */
+#customer-table tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+/* Button styles */
+.action-button {
+    padding: 4px 8px; /* Adjusted padding */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+}
+
+.edit-button {
+    background-color: #c2cbe5;
+    color: #586ad0;
+    margin-right: 4px; /* Adjusted margin */
+    font-size: 16px; /* Adjusted font size */
+}
+
+.edit-button:hover {
+    background-color: #827e7f;
+}
+
+.delete-button {
+    color: #bb3737;
+    background-color: #d4a4a4;
+    font-size: 16px; /* Adjusted font size */
+}
+
+.delete-button:hover {
+    background-color: #827e7f;
+}
+
+/* Footer container styles */
+.footer-container {
+    width: calc(100% - 250px);
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.pagination li {
+    display: inline;
+    margin: 0 3px; /* Adjusted margin */
+}
+
+.pagination button {
+    padding: 4px 8px; /* Adjusted padding */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.pagination button:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.action-icon {
+    cursor: pointer;
+    margin: 0 3px; /* Adjusted margin */
+}
+
+.edit-icon {
+    color: #4c51af; /* Color for edit */
+}
+
+.delete-icon {
+    color: #F44336; /* Color for delete */
+}
+
+.action-icon:hover {
+    transform: scale(1.05); /* Slightly reduced scale */
+}

@@ -1,0 +1,169 @@
+/* Ensure the html and body cover the full viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  color: black;
+  /* overflow: hidden;  */
+  /* background-color: #c2cbe5b4; Light grey background */
+}
+
+/* The form container */
+.add-purchase-form {
+  width: 1100px; 
+  height: 90%; 
+  margin: 10px; 
+  padding: 40px; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  overflow-y: hidden; 
+  margin-left: 20px;
+  border: 10px solid #c2cbe5b4;
+  margin-top: 0px;
+  margin-left: -20px;
+}
+
+.add-purchase-form h2 {
+  text-align: center;
+  margin-bottom: 10px; 
+  color: #333333; 
+  font-size: 25px;
+  margin-top: -40px;
+}
+
+.supplier-info,
+.summary-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+.input-group {
+  flex: 1;
+  margin-right: 15px; /* Slightly increased margin between input groups */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin for better spacing */
+  font-weight: bold;
+  color: #555555; /* Medium grey text color */
+}
+
+.input-group input,
+.input-group select {
+  width: calc(100% - 16px); /* Adjust width to fit padding */
+  padding: 10px; /* Slightly reduced padding for better spacing */
+  height: 45px; /* Adjusted height for input fields */
+  border-radius: 5px; /* Slightly increased border radius */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for input fields */
+  background-color: #ffffff; /* White background for select elements */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Remove border */
+  word-break: break-word; /* Added word-break to prevent overflowing content */
+}
+
+.add-purchase-form .new-row-btn,
+#addpurchase-save-btn {
+  display: block;
+  width: 20%;
+  padding: 10px; /* Increased padding for better spacing */
+  background-color: #3f7dc4; /* Blue background for buttons */
+  color: white;
+  border-radius: 5px; /* Slightly increased border radius */
+  cursor: pointer;
+  font-size: 15px;
+  border: none; /* Remove border */
+}
+
+.new-row-btn {
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  float: right;
+}
+
+.new-row-btn:hover,
+#addpurchase-save-btn:hover {
+  background-color: #214c88; /* Slightly darker blue for hover state */
+}
+
+.purchase-items-table {
+  width: 100%;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+  table-layout: fixed; /* Ensures equal width for all columns */
+}
+
+.purchase-items-table th,
+.purchase-items-table td {
+  padding: 12px; /* Increased padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  height: 70px; /* Increased height for table rows */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  font-size: 15px;
+  border: none; /* Remove border */
+  word-break: break-word; /* Prevents content from overflowing the cell */
+}
+
+.purchase-items-table th {
+  background-color: #f8f9fa; /* Light grey background for table headers */
+}
+
+.purchase-items-table td select,
+.purchase-items-table td input {
+  width: calc(100% - 14px); /* Adjust width to fit padding */
+  padding: 15px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Slightly increased border radius */
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  font-size: 15px;
+  border: none; /* Remove border */
+  word-break: break-word; /* Prevents input content overflow */
+}
+
+.purchase-items-table td button {
+  background-color: #dc3545; /* Red background for delete button */
+  color: white;
+  padding: 10px 16px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Slightly increased border radius */
+  cursor: pointer;
+  border: none; /* Remove border */
+}
+
+.purchase-items-table td button:hover {
+  background-color: #c82333; /* Slightly darker red for hover state */
+}
+
+/* Add shadow effect for .st class */
+.st {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.add-purchase-form .totals {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  gap: 16px; /* Adjust gap between elements as needed */
+}
+
+.add-purchase-form .totals .input-group {
+  flex: 1; /* Allows the input groups to grow and shrink as needed */
+  min-width: 150px; /* Ensures that each input group has a minimum width */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border: none; /* Remove border */
+}
+
+.add-purchase-form .totals .input-group label {
+  margin-bottom: 4px; /* Adds spacing between label and input */
+}
+
+.add-purchase-form .totals .input-group input,
+.add-purchase-form .totals .input-group select {
+  width: 100%; /* Makes input fields and selects take up full width */
+  border: none; /* Remove border */
+}

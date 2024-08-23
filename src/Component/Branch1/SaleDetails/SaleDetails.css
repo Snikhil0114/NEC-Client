@@ -1,0 +1,211 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Full viewport height to center vertically */
+  margin-top: 30px; /* Starts 30px from the top */
+  font-family: Arial, sans-serif;
+}
+
+.sale-details-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #000;
+}
+
+.bor {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.add {
+  width: 100px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo1 img {
+  height:100px; /* Increased height */
+  width: 100px;  /* Increased width */
+  margin-left: 10px;
+}
+
+.invoice-header p {
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+.company-details {
+  text-align: center;
+  font-size: 12px;
+}
+
+.gst-number {
+  text-align: right;
+  margin-top: -100px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.customer-row, .customer-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-row p,
+.customer-row1 p,
+.customer-row2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.products-section {}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.products-table thead th {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  text-align: left;
+  height: 10px;
+  font-size: 12px;
+}
+
+.products-table tbody td {
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  height: 10px;
+}
+
+.products-table th,
+.products-table td {
+  vertical-align: middle;
+}
+
+/* Payment details */
+.payment-details {
+  margin-top: 8px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.payment-details div {
+  margin: 0;
+  padding: 0;
+}
+
+.payment-details .info-left,
+.payment-details .info-center,
+.payment-details .info-right {
+  margin: 0;
+}
+
+.payment-details p {
+  margin: 1px 0; /* Reduce the space between payment details items */
+  line-height: 1.2; /* Adjust line height if needed */
+}
+
+.eye-details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eye-details-table {
+  border-collapse: collapse;
+  width: 45%;
+  margin: 0 10px;
+}
+
+.eye-details-table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.eye-details-table th, .eye-details-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 12px;
+  height: 10px;
+}
+
+.eye-details-table th {
+  background-color: #f4f4f4;
+}
+
+.terms {
+  /* margin-top: 25px; */
+}
+
+.print-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #307dc1;
+}
+
+@media print {
+  .print-button {
+    display: none;
+  }
+}
+
+.Thankyounote {
+  text-align: center;
+  font-size: 14px;
+}
+
+.Technopulse {
+  text-align: center;
+  font-size: 14px;
+}
+
+.eye-details-table .add {
+  align-items: center;
+  text-align: center;
+}
+
+.Sign {
+  text-align: end;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: px;
+}
+
+.terms-and-conditions {
+  margin-top: 20px;
+  font-size: 14px;
+}

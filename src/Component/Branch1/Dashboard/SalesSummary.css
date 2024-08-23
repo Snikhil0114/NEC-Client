@@ -1,0 +1,69 @@
+.sales-summary {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px; /* Adjusted padding */
+  background-color: #fbf7f7;
+  position: absolute;
+  top: 25%; /* Adjusted top position */
+  left: 61%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%);
+  width: 78%; /* Reduced width */
+  height: 200px; /* Reduced height */
+  margin-bottom: 40px; /* Adjusted margin */
+  margin-left: -45px;
+}
+
+.sales-summary h2 {
+  font-size: 18px; /* Reduced font size */
+  font-weight: grey;
+  margin-bottom: 8px; /* Adjusted margin */
+  color: #333;
+}
+
+.summary-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px; /* Adjusted padding */
+  width: 160px; /* Reduced width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.summary-card .icon {
+  font-size: 30px; /* Reduced icon size */
+  width: 50px; /* Reduced width */
+  height: 50px; /* Reduced height */
+  margin-bottom: 8px; /* Adjusted margin */
+  margin-left: 60px; /* Adjusted margin */
+  margin-top: 15px; /* Adjusted margin */
+}
+
+.summary-card .details {
+  font-size: 12px; /* Reduced font size */
+}
+
+.summary-card .number {
+  font-size: 20px; /* Reduced font size */
+  font-weight: bold;
+  color: black;
+}
+
+.summary-card .label {
+  color: rgb(86, 83, 83);
+  margin-bottom: 8px; /* Adjusted margin */
+  font-size: 18px; /* Reduced font size */
+  margin-left: -10px; /* Adjusted margin */
+  text-align: center;
+}
+
+.summary-card .change {
+  color: green;
+}
+
+.total-sales { background-color: #dfa7a7; }
+.total-orders { background-color: #dac399; }
+.total-discount { background-color: #a7dba7; }
+.new-customers { background-color: #b3a2dc; }
+.total-stock { background-color: #d3db97; }

@@ -1,0 +1,106 @@
+/* Sidebar styling */
+.sidebar {
+  width: 200px; /* Reduced width */
+  height: 100vh; /* Adjusted height to fill viewport */
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 15px; /* Reduced padding */
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  z-index: 999;
+}
+
+/* Logo and text in sidebar */
+.sidelogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px; /* Reduced margin */
+  border-radius: 10px;
+  padding: 8px; /* Reduced padding */
+}
+
+#sidebar-logo-img {
+  width: 80px; /* Reduced logo size */
+  height: 80px; /* Reduced logo size */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+.sidelogo h6 {
+  margin-top: 8px; /* Reduced margin */
+  font-size: 1.2em; /* Reduced font size */
+  color: #333;
+  font-weight: bold;
+}
+
+/* Menu styling */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px; /* Reduced padding */
+  margin-bottom: 20px; /* Reduced margin */
+  border-radius: 5px;
+  color: #555;
+  text-decoration: none;
+  font-size: 1em; /* Reduced font size */
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item.active,
+.sidebar-item:hover {
+  background-color: #c2cbe5b4;
+  color: #586ad0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.menuLink span {
+  margin-left: 8px; /* Reduced margin */
+  font-size: 1em; /* Reduced font size */
+}
+
+/* Logout button styling */
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px; /* Reduced padding */
+  color: #bb3737;
+  cursor: pointer;
+  background-color: #d4a4a4a6;
+  font-size: 1em; /* Reduced font size */
+  font-weight: bold;
+  border-radius: 10px;
+  /* margin-bottom: 0px; */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+}
+
+.logout:hover {
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adjusted shadow */
+}

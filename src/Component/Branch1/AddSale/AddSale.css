@@ -1,0 +1,241 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  color: black;
+  /* overflow: hidden;  */
+  /* background-color: #c2cbe5b4; Light grey background */
+}
+#item ,#payment{
+  font-size: 17px;
+  padding: 10px;
+}
+/* The form container */
+.add-sale-form {
+  width: 1100px; 
+  height: 90%; 
+  margin: 10px; 
+  padding: 40px; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  overflow-y: hidden; 
+  margin-left: 20px;
+  border: 10px solid #c2cbe5b4;
+  margin-top: 0px;
+  margin-left: -20px;
+}
+
+.add-sale-form h2 {
+  text-align: center;
+  margin-bottom: 10px; 
+  color: #333333; 
+  font-size: 25px;
+  margin-top: -40px;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.customer-info .input-group-row {
+  display: flex;
+  gap: 30px; 
+}
+
+.customer-info label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group select,
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word; /* Added word-break property */
+}
+
+/* Special styling for Eye labels */
+.customer-info > label {
+  margin-top: 1px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .customer-info .input-group-row {
+    flex-direction: column; 
+  }
+}
+
+#addsale-save-btn {
+  display: inline;
+  width: 20%;
+  padding: 10px;
+  background-color: #3f7dc4; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+#bill-print-btn{
+  /* display: block; */
+  width: 20%;
+  padding: 10px;
+  background-color: #3f7dc4; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 640px;
+}
+.add-sale-form .new-row-btn, #scan {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: #3f7dc4; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+}
+.MRP {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+.new-row-btn {
+  margin-bottom: 25px;
+}
+
+#scan {
+  text-align: center;
+}
+
+.new-row-btn:hover,
+#addsale-save-btn:hover,
+#scan:hover {
+  background-color: #214c88; 
+}
+
+.sale-items-table {
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  table-layout: fixed; /* Ensure columns have equal width */
+}
+.sale-items-table select{
+  background-color: white;
+  color: black;
+}
+.sale-items-table th,
+.sale-items-table td {
+  padding: 12px;
+  box-sizing: border-box;
+  height: 70px; 
+  background-color: #ffffff; 
+  word-break: break-word; /* Added word-break property */
+}
+
+.sale-items-table th {
+  background-color: #d3d7db; 
+  font-size: 15px;
+  width: 100px; /* Ensures same width for all columns */
+}
+
+.sale-items-table td select,
+.sale-items-table td input {
+  width: calc(100% - 14px);
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  font-size: 14px;
+  word-break: break-word; /* Added word-break property */
+}
+
+.sale-items-table td button {
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.sale-items-table td button:hover {
+  background-color: #c82333; 
+}
+
+/* Add shadow effect for .st class */
+.st {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.totals-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+  gap: 20px;
+  align-items: center;
+}
+.totals label{
+  font-size: 15px;
+}
+.totals input{
+  font-size: 14px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word; /* Added word-break property */
+}
+
+@media (max-width: 1024px) {
+  .totals {
+    flex-wrap: wrap; 
+  }
+
+  .input-group {
+    min-width: 100%; 
+  }
+}
